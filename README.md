@@ -9,4 +9,4 @@ Este repositório contém o código do site **Metropolitano 16**, um projeto sob
 
 ## Autor
 
-Seu Nome (ou Nome do Projeto)
+Metropolitano16
