@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metropolitano 16</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+    header { background: #111; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #d32f2f; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .container { max-width: 900px; margin: auto; padding: 20px; }
+    .article { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .article h2 { color: #d32f2f; }
+    footer { background: #111; color: white; text-align: center; padding: 15px; margin-top: 40px; }
+    .social-icons a { margin: 0 10px; color: white; text-decoration: none; font-size: 20px; }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Metropolitano 16</h1>
+    <p>Notícias e Opiniões sobre a Política Local</p>
+  </header>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#noticias">Notícias</a>
+    <a href="#opiniao">Opinião</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="container" id="inicio">
+    <div class="article">
+      <h2>NOVO PAINEL NAS UPAs: TRANSPARÊNCIA OU PALIATIVO?</h2>
+      <p><strong>Data:</strong> 18 de abril de 2025</p>
+      <p>A Prefeitura de Ribeirão Preto sancionou uma lei que obriga a instalação de painéis eletrônicos nas UPAs e na UBDS da Vila Virgínia. A promessa? Informar em tempo real o tempo de espera, número de médicos, pacientes na fila e ocupação dos leitos.</p>
+      <p>A ideia é boa. Transparência importa. Mas a realidade nas unidades de saúde é outra: filas longas, falta de médicos, estrutura sobrecarregada e até 600 atendimentos por dia em cada unidade.</p>
+      <p>🩺 O painel mostra a espera. Mas quem resolve o problema da espera?</p>
+      <p>💬 Ribeirão precisa de mais do que tecnologia — precisa de investimento real em saúde pública.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 Metropolitano 16. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
