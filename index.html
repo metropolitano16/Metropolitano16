@@ -14,6 +14,9 @@
     .article h2 { color: #d32f2f; }
     footer { background: #111; color: white; text-align: center; padding: 15px; margin-top: 40px; }
     .social-icons a { margin: 0 10px; color: white; text-decoration: none; font-size: 20px; }
+    #editor { background: white; padding: 15px; border-radius: 8px; min-height: 150px; margin-bottom: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    button { background: #d32f2f; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #b71c1c; }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -30,8 +33,6 @@
     <a href="#contato">Contato</a>
   </nav>
   <div class="container" id="inicio">
-    <img src="painel-upa.jpg" alt="Painel UPA" style="max-width: 100%; border-radius: 8px;" />
-
     <div class="article">
       <h2>NOVO PAINEL NAS UPAs: TRANSPARÊNCIA OU PALIATIVO?</h2>
       <p><strong>Data:</strong> 18 de abril de 2025</p>
@@ -40,7 +41,15 @@
       <p>🩺 O painel mostra a espera. Mas quem resolve o problema da espera?</p>
       <p>💬 Ribeirão precisa de mais do que tecnologia — precisa de investimento real em saúde pública.</p>
     </div>
+
+    <h2>Nova Publicação</h2>
+    <div contenteditable="true" id="editor">Escreva aqui sua notícia...</div>
+    <button onclick="publicarNoticia()">Publicar</button>
+
+    <h2>Notícias Publicadas</h2>
+    <div id="noticiasPublicadas"></div>
   </div>
+
   <footer>
     <div class="social-icons">
       <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -49,6 +58,18 @@
     </div>
     <p>&copy; 2025 Metropolitano 16. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    function publicarNoticia() {
+      const editor = document.getElementById('editor');
+      const noticias = document.getElementById('noticiasPublicadas');
+      const novaNoticia = document.createElement('div');
+      novaNoticia.classList.add('article');
+      novaNoticia.innerHTML = '<p><strong>Data:</strong> ' + new Date().toLocaleDateString() + '</p>' + editor.innerHTML;
+      noticias.prepend(novaNoticia);
+      editor.innerHTML = 'Escreva aqui sua notícia...';
+    }
+  </script>
 </body>
 </html>
 
